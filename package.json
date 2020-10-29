@@ -1,0 +1,33 @@
+{
+  "name": "PokemonDesk",
+  "version": "1.0.0",
+  "description": "Tutorial",
+  "main": "index.js",
+  "repository": "https://github.com/Mx0071/PokemonDesk.git",
+  "scripts": {
+    "build:dev": "env NODE_ENV=development webpack --config webpack.config.js",
+    "build:prod": "env NODE_ENV=production webpack --config webpack.config.js",
+    "//": [
+      "start command is different because I had an issue like ",
+      "and did not figure out yet which webpack-* verisons should be.",
+      "https://github.com/webpack/webpack-dev-server/issues/2759"
+    ],
+    "start": "env NODE_ENV=production webpack serve --mode development --env development"
+  },
+  "author": "Maxim Onufrienko maxim.onufrienko@gmail.com",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  },
+  "devDependencies": {
+    "css-loader": "^5.0.0",
+    "html-webpack-plugin": "^4.5.0",
+    "style-loader": "^2.0.0",
+    "ts-loader": "^8.0.7",
+    "typescript": "^4.0.5",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^4.1.0",
+    "webpack-dev-server": "^3.11.0"
+  }
+}
