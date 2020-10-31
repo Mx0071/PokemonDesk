@@ -27,8 +27,8 @@ const MyHometask: HomeTaskInterface = {
 interface MyArray<T> {
 	[N: number]: T;
 
-	reduce(fn: (el1: T, el2: T) => T): T;
+	reduce<U>(fn: (el1: U, el2: T) => U, init: U): U;
 };
 
 const tsArr: MyArray<number> = [1,2,3,10,4,5,6,8, 10.1];
-tsArr.reduce((a,b) => a + b);
+console.log(tsArr.reduce((a, b) => a + b, 0));
