@@ -1,15 +1,11 @@
 import React from 'react';
 
-import s from './App.module.scss';
-import Footer from './components/Footer';
-import Header from './components/Header';
+import HomePage from './pages/Home';
 
 const App = () => {
   return (
     <div>
-      <Header />
-      <div className={s.content}>This is App Component!</div>
-      <Footer />
+      <HomePage />
     </div>
   );
 };
